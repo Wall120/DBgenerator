@@ -1,0 +1,3054 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="" name="" >
+<node_order><![CDATA[]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="34" name="Запуск прототипа" >
+<node_order><![CDATA[3]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="35" name="Проверка запуска прототипа с ярлыка на рабочем столе">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[12]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Запуск прототипа с ярлыка</p>
+]]></summary>
+	<preconditions><![CDATA[<p>После установки прототипа, появился ярлык DataBase Generator.</p>
+
+<p>При установленом доступе к серверу и с подключеным БД workbench, запустить прототип</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Кликнуть двойным кликом левой кнопкой мыши по ярлыку DBGenerator на рабочем столе</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Клик сработал, появилось рабочее окно прототипа&nbsp;DBGenerator</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="37" name="Проверка запуска прототипа из меню &quot;Пуск&quot; Windows">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[13]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Запуск прототипа через меню Пуск</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Сохраненный прототип отображается в меню &quot;Пуск&quot; системы Windows в списке всех приложений</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Нажать [Win] на клавиатуре</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Кнопка нажалась, появился список меню &quot;Пуск&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Кликнуть левой кнопкой мыши на &quot;все приложения&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Сработал переход на список в алфавитном порядке всех установленных приложений в меню &quot;Пуск&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Найти папку DBGenerator из алфавитного списка</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Папка DBGenerator находиться в списке</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Развернуть папку и кликнуть левой кнопки мыши на файл запуска прототипа</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Папка развернулась. После клика&nbsp;запустилось рабочее окно прототипа</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="39" name="Проверка запуска прототипа от имени администратора">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[14]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Запуск прототипа с правами администратора</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Установлен ярлык DBGenerator на рабочем столе. Запустить при условии, что сервер и БД Workbench подключены</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Кликнуть правой кнопкой мыши по ярлыку прототипа на рабочем столе</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Клик сработал, появился выпадающий список возможных действий с выбранным ярлыком</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Выбрать и кликнуть левой кнопкой мыши по &quot;запуск от имени администратора&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Клик сработал, прототип открылся от имени администратора</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="41" name="Проверка запуска прототипа из корневой папки DBGenerator">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[15]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Запуск прототипа из папки</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Файлы прототипа и сам прототип сохранились на диск С:\Program Files\DBGenerator</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть папку DBGenerator на диске С в папке&nbsp;Program Files</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Папка DBGenerator с доп. файлами открылась</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Найти приложение DBGeneratorUI</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Приложение с таким именем находиться в папке</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Кликнуть двойным кликом левой кнопкой мыши на приложение</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Клик сработал, открылось рабочее окно прототипа</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+</testsuite><testsuite id="2" name="Установка прототипа" >
+<node_order><![CDATA[4]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="3" name="Подключение к Серверу и БД" >
+<node_order><![CDATA[0]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="20" name="Проверка подключения прототипа с Сервером и БД через Wi-fi соединение">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[5]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Подключение прототипа с интернет доступом</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Сеть: Wi-Fi</p>
+
+<p>Open_server и БД запущены.</p>
+
+<p>Кликнуть левой кнопкой мыши&nbsp;на скрытые значки в контекстном меню&nbsp;-&gt; кликнуть на флажок Сервера левой кнопкой мыши -&gt; в выпадающем списке Сервера кликнуть на флажок &quot;запустить&quot;.</p>
+
+<p>Кликнуть левой кнопкой мыши на контекстное меню &quot;Пуск&quot; -&gt; в меню &quot;Пуск&quot; кликнуть левой кнопкой мыши на &quot;Все приложения&quot; -&gt; из алфавитного списка программ выбрать MySQL - Workbench -&gt; кликнуть левой кнопкой мыши по&nbsp;Workbench - &gt; в БД установить соединение с запущенным сервером -&gt;&nbsp;БД SHEMAS обновить -&gt; отобразиться БД прототипа medxregisrty</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Включить wi-fi соединение на ПК</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>wi-fi соединение установлено</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Запустить Сервер и БД</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Сервер и БД запущены</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Запустить прототип через ярлык на рабочем столе</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Рабочее окно прототипа запустилось</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="22" name="Проверка подключения прототипа без запуска Сервера">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[6]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Подключение прототипа запуска к Серверу и БД</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Работа Сервера на ПК остановлена.&nbsp;</p>
+
+<p>Развернуть из контекстного меню &quot;Пуск&quot; скрытые значки, кликнув левой кнопкой мыши по флажку &quot;отображать&quot; -&gt; кликнуть левой кнопкой мыши по флажку open_server -&gt; кликнуть на флажок &quot;остановить&quot;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Остановить работу&nbsp;с Сервером</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Работа с Сервером остановлена</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Подключиться к прототипу DBGenerator с ярлыка на рабочем столе</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Подключение не выполнено, рабочее окно прототипа не развернулось на экране</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="24" name="Проверка запуска прототипа и Сервера через подключение к мобильному интернету">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[7]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Подключена мобильная раздача интернета на ПК. Wi-fi отключен</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="26" name="Проверка запуска прототипа и Сервера без интернет соединения">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[8]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Wi-fi отключен на ПК</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+</testsuite>
+<testcase internalid="12" name="Проверка установки Сервера на ПК">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Установка сервера</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Сервер: open_server_5.3.5</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Запустить установщик open_server двойным кликом левой кнопки мыши</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Установщик запустился, появилось окно установки</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Оставить диск для скачивания по умолчанию, кликнуть на&nbsp;[установить]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Сервер установится по умолчанию на диск С, после клика на [установить] появиться окно загрузки</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Ждать конца загрузки</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Загрузка завершина, открылась папка, куда загрузились файлы сервера и сервер</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="14" name="Проверка установки MySQL Workbench на ПК">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[2]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Установка БД</p>
+]]></summary>
+	<preconditions><![CDATA[<p>БД: mysql_workbench установщик заранее загружен на ПК.<br />
+Установливать со всеми рекоментациями, оставлять все пути для скачивания по умолчанию</p>
+
+<p>Сервер open_server установлен на ПК и запущен</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Запустить установщик двойным кликом левой кнопкой мыши</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Появилось окно устнановки</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Кликнуть левой кнопкой мыши на [next] в окне установки</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Переход в окно выбора пакета установки</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Оставить выбор полного пакета БД, кликнуть левой кнопкой мыши по [next]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Появилось окно загрузки</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Кликнуть левой кнопкой мыши на [finish]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Загрузка завершена, появилось окно подключения к серверу</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Заполнить все поля данными, создать подключение с сервером</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Все поля заполнены, связь с серевером установлена, появилась главное меню приложения workbench с подключением к серверу</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="16" name="Проверка установка прототипа DBGenerator на ПК">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[3]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Установка прототипа</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Прототип: DBGenerator. В установщике оставить все пути для скачивания по умолчанию</p>
+
+<p>Сервер open_server установлен и запущен</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть установщик DBGenerator двойным кликом левой кнопкой мыши&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Появилось окно установки прототипа</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>В окне кликнуть левой кнопкой мыши на [next]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Открылось окно загрузки, автоматически запустился процесс загрузки (процесс виден на загрузочной шкале)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Автозавершение загрузки, окно пропало после загрузки</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Загрузка завершена, появился ярлык DBGenerator на рабочем столе</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="18" name="Проверка сохранения DBGenerator на диск D">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[4]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Сохранение прототипа на диск</p>
+]]></summary>
+	<preconditions><![CDATA[<p>По умолчанию сохраняется на диск С</p>
+
+<p>Выбрать диск D для сохранения прототипа</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Запустить установщик DBGenerator</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Установщик запущен, появилось окно установки</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Кликнуть левой кнопкой мыши на [обзор]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Кнопка кликнулась, развернулось окно выбора дисков для сохранения прототипа</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Выбрать диск D для сохранения</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Выбран диск&nbsp;D для сохранения прототипа, окно установки сменило путь с диска С на D</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Кликнуть левой кнопкой мыши [next]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Переход в окно с условием сохранить прототип в папку DBGenerator</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Оставить checkbox на загрузку и сохранить прототип в папку DBGenerator, кликнуть [install]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Выбрана папка для загрузки и сохранения прототипа, после клика появилось окно загрузки</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Завершить загрузку прототипа на диск D</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Установка прототипа завершена. Окно загрузки закрылось</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="28" name="Проверка ручного прерывания установки прототипа на ПК">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[9]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Ручное прерывание установки прототипа</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Прервать установку прототипа во время его загрузки, кликнув левой кнопкой мыши на [отмена]</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Запустить установщик прототипа</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Установщик запущен, появилось окно установки</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Согласиться с путем и папками для сохранения прототипа кликнуть левой кнопкой мыши [next]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Согласилисть оставить все по умолчанию, после клика на [next] появилось окно процесса загрузки</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Кликнуть левой кнопкой мыши на [отмена]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Загрузка прервалась, окно загрузки закрылось</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="30" name="Проверка загрузки прототипа с запуском параллельных загрузок на ПК">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[10]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>установщик Sims 3; запуск Torrent (подключиться к раздаче); установщик MySQL</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Запустить процесс установки прототипа с параллельной загрузкой других программ</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="32" name="Проверка возобновления установки прототипа">
+	<node_order><![CDATA[1006]]></node_order>
+	<externalid><![CDATA[11]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Возобновление загрузки прототипа</p>
+]]></summary>
+	<preconditions><![CDATA[<p>В окне процесса загрузки прототипа, кликнуть левой кнопкой мыши на [продолжить загрузку]</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть установщик прототипа</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Установщик запущен, открыто окно процесса загрузки</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Кликнуть левой кнопкой мыши на [продолжить загрузку]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Процесс установки пошел с момента прерывания загрузки</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="53" name="Проверка прерывания установки через диспетчер задач">
+	<node_order><![CDATA[1007]]></node_order>
+	<externalid><![CDATA[21]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Прерывание установки через диспетчер задач</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Вызвать диспетчер задач горячими клавишами &quot;ctrl+alt+delete&quot; и прервать установку прототипа</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть диспетчер задач</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Диспетчер задач открыт, появилось окно со всеми работающими приложениями</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Запустить установщик DBGenerator&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Установщик запущен, появилось окно установки</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Оставить путь сохранения прототипа по умолчанию, кликнуть левой кнопкой мыши [next]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Появилось окно загрузки</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Начать процесс загрузки кликнув левой кнопкой мыши на [install]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Запущен процесс загрузки прототипа</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Перейти в&nbsp;диспетчер задачь, найти установку прототипа, выбрать и снять задачу установки прототипа</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Перешли в окно диспетчер задач, нашли процесс установки DBGenerator, сняли задачу установки. Установка прототипа прервалась, окно с процессом загрузки закрылось</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="55" name="Проверка отмены установки прототипа">
+	<node_order><![CDATA[1008]]></node_order>
+	<externalid><![CDATA[22]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Отмена установки прототипа</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Отмена процесса загрузки прототипа на ПК&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть установщик DBGenerator</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Открыто окно установки прототипа</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Оставить путь сохранения прототипа по умолчанию, кликнуть левой кнопкой мыши [next]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Переход в окно загрузки прототипа</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Кликнуть левой кнопкой мыши на элемент [х]&nbsp;в правом верхнем углу окна загрузки</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Окно загрузки закрылось, установка прототипа отменена, данные не сохранились на ПК</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+</testsuite><testsuite id="4" name="Удаление прототипа" >
+<node_order><![CDATA[5]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="45" name="Проверка удаления прототипа через uninstall">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[17]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Удаление прототипа через uninstall</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Найти в папке DBGenerator файл uninstall</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть папку DBGenerator</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Папка&nbsp;DBGenerator открыта</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Найти и кликнуть двойным кликом левой кнопкой мыши на uninstall файл</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Файл найден и и открылось окно для удаления прототипа</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Запустить процесс удаления прототипа нажав кнопку [uninstall]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Появилось окно с сообщением &quot;действительно ли удалить программу&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Кликнуть левой кнопкой мыши на [ok] в окне с сообщением</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Удаление подтверждено, процесс удаления запущен в окне удаления</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Завершить удаление прототипа</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Удаление завершено. Прототип перемещен в &quot;корзину&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="47" name="Проверка удаления прототипа через параметры Win">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[18]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>Удалить прототип через параметры Windows в разделе &quot;приложения и возможности&quot;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="49" name="Проверка прямого удаления папок прототипа с диска C">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[19]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Прямое удаление папок с диска С</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Удаление через корневую папку на диске C</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Зайти на диск С в папку Program Files</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Папка&nbsp;Program Files открыта</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Найти папку DBGenerator</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Папка&nbsp;DBGenerator найдена</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Кликнуть правой кнопкой мыши по папке DBGenerator</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Клик сработал, появился выпадающий список действий с выбранной папкой</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Выбрать &quot;удалить DBGenerator&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Появилось окно &quot;перемещения папки в корзину&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Переместить папку в корзину кликнув на [ok]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Папка перемещена в корзину</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Очистить корзину, кликнув правой кнопкой мыши на ярлык корзины рабочего стола</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Корзина очищена. Прототип удален</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="51" name="Проверка удаления прототипа через приложение Revo Uninstaller">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[20]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+</testsuite><testsuite id="5" name="Тестирование UI прототипа" >
+<node_order><![CDATA[6]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="57" name="Тестирование поля состояния" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="70" name="Проверка ответа при добавлении пациента в таблицу &quot;Patientlist&quot;">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[29]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Получение ответа при добавлении пациента</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Только числовой ввод</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть прототип</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Прототип открыт</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Ввести в поле &quot;Patient Count&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Кол-во пациентов в поле введено</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Кликнуть левой кнопкой мыши [add patient]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Кнопка нажалась</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Получить ответ в поле состояния</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Пациенты добавились в таблицу, в поле состояния получен ответ &quot;Patient is added&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="72" name="Проверка ответа при обновлении пациента в таблицу &quot;Patientlist&quot;">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[30]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Получение ответа при обновлении пациента</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Только числовой ввод</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть прототип</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Прототип открыт</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Вписать кол-во пациентов и кликнуть левой кнопкой мыши на [update&nbsp;patient]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Кол-во пациентов вписано в поле, кнопка [update patient] нажата</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Получить сообщение в поле ответа</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Получено сообщение &quot;Patient is updated&quot; в поле ответа</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="74" name="Проверка ответа при добавлении рабочего списка в таблицу &quot;Worklist&quot;">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[31]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Получение ответа при добавлении рабочего списка</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Только числовой ввод значений. Поле&nbsp;&quot;AE Title&quot; заполнено</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть прототип</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Прототип открыт</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Вписать в поле &quot;Worklist Count&quot;&nbsp;положительное числовое значение</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Значение в поле вписаны</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Кликнуть левой кнопкой мыши на [add worklist]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Кнопка нажалась</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Получить ответ в поле ответов</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Получено сообщение &quot;Worklist is added&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="76" name="Получение ответа при обновлении рабочего списка">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[32]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="78" name="Получение ответа при удалении содержимого таблиц">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[33]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Получение ответа при удалении содержимого таблиц</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Комбинация клавиш: &quot;ctrl+A&quot;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Указать кол-во пациентов в поле &quot;кол-во пациентов&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Кол-во указано в поле</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Нажать левую кнопку мыши на [add patient]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Пациенты добавлены в таблицу &quot;список пациентов&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Кликнуть левой кнопкой мыши на пациента в таблице -&gt; на клавиатуре выбрать комбинацию</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Выбран одни пациент - &gt; выбраны все пациенты из таблицы (цвет выбранных объектов зеленый)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Кликнуть левой кнопкой мыши на [delete]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Выбранные объекты таблицы удалились из таблицы</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Получить ответ в поле ответов</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Получен ответ &quot;DataBase is deleted&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="80" name="Получение ответа при подключении прототипа с БД">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[34]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="82" name="Получение предупреждающих сообщений при вводе данных в поля ввода">
+	<node_order><![CDATA[1006]]></node_order>
+	<externalid><![CDATA[35]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="84" name="Проверка подсказок при вводе данных в поля ввода">
+	<node_order><![CDATA[1007]]></node_order>
+	<externalid><![CDATA[36]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="86" name="Проверка появления подсказок при наведении курсором на поля ввода данных">
+	<node_order><![CDATA[1008]]></node_order>
+	<externalid><![CDATA[37]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+</testsuite>
+<testcase internalid="58" name="Проверка активности элементов прототипа при наведение курсором">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[23]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Проверка активности элементов прототипа при наведение курсором</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Наведение курсором на: &quot;свернуть окно&quot;, &quot;развернуть откно&quot;, &quot;закрыть окно&quot;, &quot;элементы таблицы пациентов&quot;, &quot;поле ввода кол-ва пациентов&quot;, кнопка &quot;добавить пациента&quot;, кнопка &quot;обновить пациента&quot;, элементы таблицы &quot;рабочий список&quot;, поле ввода &quot;кол-ва рабочих списков&quot;, поле с выпадающим списком &quot;модальность&quot;, поле &quot;заголовок&quot;, кнопка &quot;добавить рабочий список&quot;, кнопка &quot;обновить рабочий список&quot;, поле для ответов, кнопка &quot;соединение&quot;, кнопка &quot;удалить&quot;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Навести курсоров на элементы окна прототипа:</p>
+
+<p><strong>&quot;свернуть окно&quot;, &quot;развернуть окно&quot;, закрыть окно&quot;</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Элементы &quot;свернуть окно&quot;, &quot;развернуть окно&quot; подсвечиваются серым цветом. Элемент &quot;закрыть окно&quot; - выделяется красным цветом</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Навести курсором на содержимое таблицы &quot;список пациентов&quot; и &quot;рабочий список</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Список пациентов и рабочий список при наведении курсором выделяется зеленым цветом</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Навести курсором на кнопки:</p>
+
+<p><strong>&quot;добавить пациента&quot;, &quot;обновить пациента&quot;, &quot;добавить рабочий список&quot;, &quot;обновить рабочий список&quot;, &quot;соединение&quot;, &quot;удаление&quot;</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Кнопки при наведении курсором меняют цыет с зеленого на серый</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Навести курсором на поля:</p>
+
+<p><strong>&quot;кол-во пациентов&quot;, &quot;кол-во рабочих списков&quot;, &quot;модальность&quot;, &quot;заголовок&quot;</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>При наведении курсором на поля ввода данных, у полей срабатывает эффект &quot;нажатия&quot; по полю</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Навести курсором на поле с ответом</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Поле не активное при наведении курсора</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="60" name="Проверка навигации полей с помощью клавиатуры">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[24]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="62" name="Проверка адаптации элементов при растягивание и сжатие прототипа">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[25]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Проверка адаптации элементов при растягивание и сжатие прототипа</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Растягивание и сжатие окна прототипа мышью в вправо, влево, вверх, вниз</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Растянуть прототип мышью вправо, влево, вверх, вниз</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Окно прототипа адаптировано под любое действие с окном. Установлена максимальная граница для растягивания (не больше экрана монитора)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Сжать прототип мышью влево, вправо, вверх, вниз</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Установлена максимальная граница для сжатия (не меньше 3см в ширину). Элементы окна адаптированы при разных вариантах сжатия прототипа</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Растянуть и сжать прототип</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Прототип сжат и растянут одновременно, элементы окна (кнопки и поля) адаптировались под текущий размер. Появился ползунок для прокрутки таблиц вверх и вниз; Подпись полей и кнопок видна полностью и адаптировалась под размер</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="64" name="Проверка расположения элементов в прототипе">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[26]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Проверка расположения элементов в прототипе</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Проверка положения таблиц, кнопок, полей, подписей в окне</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть прототип</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Прототип открыт и запущен</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Визуально просмотреть расположение таблиц, кнопок, подписей, полей друг от друга</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Все элементы внутри прототипа расположены на одном уровне друг от друга с выравниванием по центру окна</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="66" name="Проверка размеров полей для ввода">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[27]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Проверка размеров полей для ввода</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Проверка поля &quot;AETitle&quot; под таблицей рабочий список</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть прототип</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Прототип открыт</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Найти поле &quot;AETitle&quot; и сравнить размер поля с полями ввода &quot;кол-во рабочих списков&quot; и &quot;кол-во пациентов&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Найдено поле&nbsp;&quot;AETitle&quot;, размер поля совпадает с размерами полей: &quot;кол-во рабочих списков&quot; и &quot;кол-во пациентов&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="68" name="Проверка смены шаблона курсора при наведении на поле ответа">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[28]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Проверка смены шаблона курсора при наведении на поле ответа</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Поле ответа является информационным полем</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть прототип</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Прототип открыт</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Навести курсор мыши на поле ответа</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>При наведении курсора на поле ответа, курсор остается неизменным</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="120" name="Проверка минимальной границы сжатия столбцов таблицы">
+	<node_order><![CDATA[1006]]></node_order>
+	<externalid><![CDATA[54]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Проверка минимальной границы сжатия столбцов таблицы</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Сжатие столбца &quot;ID пациента&quot; в таблице &quot;список пациентов&quot;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть прототип</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Прототип открыт</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Выбрать столбец &quot;ID пациента&quot; в таблице &quot;список пациентов&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Столбец выбран</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Клик левой кнопкой мыши на правую боковую рамку выбранного столбца -&gt; удерживая кнопку мыши, сжимаем столбец максимально влево</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Столбец сжался до установленного максимального значения сжатия</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="122" name="Проверка максимальной границы растягивания столбцов таблицы">
+	<node_order><![CDATA[1007]]></node_order>
+	<externalid><![CDATA[55]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>Выбран столбец &quot;ID пациента&quot; из таблицы &quot;список пациентов&quot;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть прототип</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Прототип открыт</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Клик левой кнопкой мыши на правую боковую рамку выбранного столбца -&gt; удерживая кнопку мыши, растягиваем столбец максимально вправо</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Столбец растянут до установленного максимального значения при растягивание</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+</testsuite><testsuite id="6" name="Тестирование UX прототипа" >
+<node_order><![CDATA[7]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="9" name="Тестирование таблицы пациентов" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="88" name="Проверка соответствия кол-ва столбцов в БД и таблицы прототипа">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[38]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="90" name="Проверка на добавление пациента">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[39]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Проверка на добавление пациента</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Ввод числового значения</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть прототип</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Прототип открыт</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Вписать числами кол-во пациентов в поле &quot;кол-во пациентов&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Число вписано в поле</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Кликнуть левой кнопкой мыши на [add patient]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>В таблице &quot;список пациентов&quot; вывелось указанное кол-во пациентов</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="92" name="Проверка на обновление пациента">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[40]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Проверка на обновление пациента</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Для сформерованной таблицы с пациентами вписать в поле &quot;кол-во пациентов&quot; новое числовое значение</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>В поле &quot;кол-во пациентов&quot; вписано числовое значение</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Кликнуть левой кнопкой мыши на [update patient]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Таблица обновила кол-во пациентов выводимых в таблице</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="94" name="Добавить max кол-во пациентов в таблицу">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[41]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Добавить max кол-во пациентов в таблицу</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Добавить 1000000 пациентов</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть прототип</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Прототип открыт</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Ввести в поле &quot;кол-во пациентов&quot; 1000000000000</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>1000000000000 значение ввелось в поле &quot;кол-во пациентов&quot;, появилось предупреждающее сообщение &quot;невозможно преобразовать значение&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Кликнуть левой кнопкой мыши на [add patient]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Введенное кол-во пациентов не добавилость в таблицу, получено сообщение в поле ответов &quot;Patient is not added&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="96" name="Добавить нулевого пациента">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[42]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Добавить нулевого пациента</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть прототип</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Прототип открыт</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>В поле &quot;кол-во пациентов&quot; оставить числовое значение 0</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>В поле &quot;кол-во пациентов&quot; автоматически выставлено значение 0</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Кликнуть левой кнопкой мыши на [add patient]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>В таблице &quot;список пациентов&quot; добавился нулевой пациент</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="98" name="Добавить пустое значение в таблицу">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[43]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Добавить пустое значение в таблицу</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть прототип</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Прототип открыт</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Удалить 0 в поле для ввода &quot;кол-во пациентов&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Значение 0 удален из поля</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Кликнуть левой кнопкой мыши на [add patient]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Пациент в таблицу не загрузился, получен ответ в поле ответа &quot;patient is not added&quot; и поле &quot;кол-во пациентов&quot; обведена красной рамкой с предупреждающим сообщением &quot;поле не может быть пустым&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="100" name="Добавить отрицательное кол-во пациентов">
+	<node_order><![CDATA[1006]]></node_order>
+	<externalid><![CDATA[44]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Добавить отрицательное кол-во пациентов</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Вписать значение -1</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть прототип</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Прототип открыт</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Вписать в поле &quot;кол-во пациентов&quot; -1</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>В поле вписано значение -1</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Кликнуть левой кнопкой мыши [add patient]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Пациент с отрицательным значением не добавлен в таблицу. Получено сообщение в поле ответа &quot;patient is not added&quot;. Поле &quot;кол-во пациентов&quot; обведено красной рамкой и с сообщением &quot;значение не может быть меньше 0&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="102" name="Вставить текст в поле для ввода кол-во пациентов">
+	<node_order><![CDATA[1007]]></node_order>
+	<externalid><![CDATA[45]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Вставить текст в поле для ввода кол-во пациентов</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть прототип</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Прототип открыт</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Вставить скопированный абзац текста в поле &quot;кол-во пациентов&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Скопированный текст вставлен в поле. Появилость предупреждающее соощение &quot;не удалось преобразовать значение&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Кликнуть левой кнопкой мыши на [add patient]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Пациент не добавился в таблицу. Получено сообщение в поле ответа &quot;patient is not added&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="104" name="Продублировать кол-во пациентов и повторно добавить в таблицу">
+	<node_order><![CDATA[1008]]></node_order>
+	<externalid><![CDATA[46]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Продублировать кол-во пациентов и повторно добавить в таблицу</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Добавить в таблицу первые 50 пациентов, затем еще раз добавить 50 пациентов в таблицу</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть прототип</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Прототип открыт</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Сгенерировать 50 пациентов в таблицу</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>50 пациентов сгенерированы в таблицу</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Ввести в поле &quot;кол-во пациентов&quot; еще раз значение 50</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>В поле вписали числовое значение 50</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Кликнуть левой кнопкой мыши на [add patient]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>В таблицу добавилось с 50 по 99 нумерация пациентов</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="106" name="Вставить картинку в поле для ввода кол-во пациентов">
+	<node_order><![CDATA[1009]]></node_order>
+	<externalid><![CDATA[47]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="108" name="Проверка соответствия карточки пациента с описанием столбцов таблицы">
+	<node_order><![CDATA[1010]]></node_order>
+	<externalid><![CDATA[48]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="110" name="Проверка сортировки по ID пациента">
+	<node_order><![CDATA[1011]]></node_order>
+	<externalid><![CDATA[49]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="112" name="Проверка сортировки по ФИО пациента">
+	<node_order><![CDATA[1012]]></node_order>
+	<externalid><![CDATA[50]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="114" name="Проверка фильтрации по времени регистрации пациента">
+	<node_order><![CDATA[1013]]></node_order>
+	<externalid><![CDATA[51]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="116" name="Удаление содержимого таблицы пациентов">
+	<node_order><![CDATA[1014]]></node_order>
+	<externalid><![CDATA[52]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Удаление таблицы пациентов</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Комбинация клавиш: &quot;ctrl+A&quot;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть прототип</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Прототип открыт</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Сформировать таблицу с пациентами</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Таблица в прототипе сформирована и отображается в рабочем окне</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Кликнуть левой кнопкой мыши на пациента из таблицы</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Выбран пациент в таблице (выделен зеленым цветом)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Использовать комбинацию клавиш для полного выделения списка таблицы</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Комбинация сработала, все объекты в таблицы выбраны и выделены зеленым цветом. В поле для ввода &quot;кол-ва пациентов&quot; автоматически вставилось выбранное кол-во пациентов из таблицы</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Кликнуть левой кнопкой мыши на [delete]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Все объекты из таблицы &quot;список пациентов&quot; удалились</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="118" name="Выборочное удаление пациентов из таблицы">
+	<node_order><![CDATA[1015]]></node_order>
+	<externalid><![CDATA[53]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="138" name="Добавить в поле &quot;кол-во пациентов&quot; значение с плавающей точкой">
+	<node_order><![CDATA[1016]]></node_order>
+	<externalid><![CDATA[63]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="140" name="Добавить в поле &quot;кол-во пациентов&quot; значения с пробелами">
+	<node_order><![CDATA[1017]]></node_order>
+	<externalid><![CDATA[64]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="142" name="Добавить в поле &quot;кол-во пациентов&quot; значения через запятую">
+	<node_order><![CDATA[1018]]></node_order>
+	<externalid><![CDATA[65]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+</testsuite><testsuite id="10" name="Тестирование рабочего списка" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="124" name="Добавить рабочий список">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[56]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="126" name="Добавить max кол-во рабочих списков">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[57]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="128" name="Обновить рабочий список">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[58]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="130" name="Удалить содержание таблицы рабочего списка">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[59]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="132" name="Выборочное удаление рабочих списков">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[60]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="134" name="Проверка сортировки по состоянию работы с пациентами">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[61]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="136" name="Проверка сортировки по дате проведения процедуры">
+	<node_order><![CDATA[1006]]></node_order>
+	<externalid><![CDATA[62]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="144" name="Оставить поле &quot;AETitle&quot; для рабочего списка пустым">
+	<node_order><![CDATA[1007]]></node_order>
+	<externalid><![CDATA[66]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Оставить поле &quot;AETitle&quot; для рабочего списка пустым</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Кол-во рабочих списков: числовое значение</p>
+
+<p>Модальность: автоматически вписано</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть прототип</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Прототип открыт</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Указать числовое значение в поле &quot;кол-во рабочих списков&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Введено числовое значение в поле</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Поле&nbsp;&quot;AETitle&quot; оставить пустым и левой кнопкой мыши кликнуть [add worklist]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Поле&nbsp;&quot;AETitle&quot; не заполнено, рабочий список не добавился. Рамка поля &quot;AETitle&quot; выделено красным цветом с предупреждающим сообщением: &quot;поле&nbsp;AETitle обязательно для заполнения&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="146" name="Добавить отрицательное значение рабочих списков">
+	<node_order><![CDATA[1008]]></node_order>
+	<externalid><![CDATA[67]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="148" name="Добавить спецсимволы в поле &quot;кол-во рабочих списков&quot;">
+	<node_order><![CDATA[1009]]></node_order>
+	<externalid><![CDATA[68]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Добавить спецсимволы в поле &quot;кол-во рабочих списков&quot;</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть прототип</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Прототип открыт</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>В поле &quot;кол-во рабочих списков&quot; вписать спецсимволы &#39;&#39;_!&quot;-&quot;№;%/,?*()&lt;&gt;{}[]&amp;~</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Спецсимволы вписаны, поле обвелость красной рамкой и появилость сообщение - &quot;не удалось преобразовать значение&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Кликнуть левой кнопкой мыши на [add worklist]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Рабочий список не добавился в таблицу, получено сообщение в поле ответа &quot;worklist is not added&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="150" name="Вставить картинку в поле &quot;AETitle&quot;">
+	<node_order><![CDATA[1010]]></node_order>
+	<externalid><![CDATA[69]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Вставить картинку в поле &quot;AETitle&quot;</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть прототип</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Прототип открыт</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Ввести в поле &quot;кол-во рабочих списков&quot; числовое значение</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Числовое значение введено в поле</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Модальность оставить по умолчанию &quot;DX&quot; -&gt; в поле &quot;AETitle&quot; вставить картинку</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Картинку в поле &quot;AETitle&quot; невозможно вставить, функция вставки неактивна</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="152" name="Вставить ссылку в поле &quot;AETitle&quot;">
+	<node_order><![CDATA[1011]]></node_order>
+	<externalid><![CDATA[70]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Вставить ссылку в поле &quot;AETitle&quot;</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть прототип</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Прототип открыт</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Добавить числовое значение в поле &quot;кол-во рабочих списков&quot;&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Числовое значение добавлено в поле</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Отставить значение в поле &quot;Модальность&quot; по умолчанию &quot;DX&quot; - &gt; Скопировать и вставить ссылку в поле &quot;AETitle&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Ссылка в поле вставлена</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Кликнуть левой кнопкой мыши на [add worklist]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Рабочий список не добавлен, появилость предупреждающее сообщение в поле &quot;AETitle&quot; - в поле недопускается использование ссылок</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="154" name="Вставить текст в поле &quot;AETitle&quot;">
+	<node_order><![CDATA[1012]]></node_order>
+	<externalid><![CDATA[71]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="156" name="Вставить цифры в поле &quot;AETitle&quot;">
+	<node_order><![CDATA[1013]]></node_order>
+	<externalid><![CDATA[72]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="158" name="Вставить отрицательное значение в поле &quot;AETitle&quot;">
+	<node_order><![CDATA[1014]]></node_order>
+	<externalid><![CDATA[73]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Вставить отрицательное значение в поле &quot;AETitle&quot;</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть прототип</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Прототип открыт</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Добавить в поле &quot;кол-во рабочих списков&quot; числовое значение</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Числовое значение добавлено</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Модальность выбрана по умолчанию &quot;DX&quot; -&gt; вставить в поле &quot;AETitle&quot; значение -10</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>В поле &quot;AETitle&quot; вставлено значение -10</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Кликнуть левой кноакой мыши на [add worklist]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Значение не добавилось в таблицу, получен ответ &quot;worklist is not added&quot;. В поле &quot;AETitle&quot; в красной рамке появилось сообщение - &quot;в поле недопустимо использование отрицательных значений&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+</testsuite></testsuite><testsuite id="7" name="Тестирование БД" >
+<node_order><![CDATA[8]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="173" name="Подключение БД">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[80]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Подключение БД</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Добавление БД MedxRegistry в Workbench.</p>
+
+<p>Прототип установлен. App файл в папке DBGenerator\Data на диске С заменен</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Установить Workbench и подключиться к open_server</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Workbench установлен, сервер подключен</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Открыть&nbsp;Workbench</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Workbench открыт</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Обновить &quot;SHEMAS&quot; в блоке навигации</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&quot;SHEMAS&quot; обновлен. Добавилась база MedxRegistry</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="175" name="Проверка связи БД и прототипа">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[81]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Проверка связи БД и прототипа</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Добавление БД в Workbench</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Установить&nbsp;Workbench и прототип на ПК</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Workbench и прототип установлены</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Открыть папку DBGenerator\Data</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Папка в DBGenerator\Data открыта</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Открыть app файл в nodpad++ от имени администратора кликом правой кнопкой мыши&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>App файл открыт в&nbsp;nodpad++</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Заменить &quot;password = root;&quot; на&nbsp; &quot;password = ;&quot; -&gt; сохранить измененный файл</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Файл изменен и сохранен</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Подключить сервер -&gt; открыть&nbsp;Workbench -&gt; обновить блок навигации</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Сервер подключен,&nbsp;Workbench открыт, после обновления блока навигации в&nbsp;Workbench появилась база прототипа</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="177" name="Добавление пациентов в таблицу БД">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[82]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="179" name="Добавление рабочего списка в таблицу БД">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[83]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="181" name="Обновление пациента в таблице БД">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[84]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="183" name="Обновление рабочего списка в таблице БД">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[85]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="185" name="Выборочное удаление пациентов из списка таблицы БД">
+	<node_order><![CDATA[1006]]></node_order>
+	<externalid><![CDATA[86]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="187" name="Полное удаление таблиц в БД">
+	<node_order><![CDATA[1007]]></node_order>
+	<externalid><![CDATA[87]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="189" name="Редактирование таблиц БД">
+	<node_order><![CDATA[1008]]></node_order>
+	<externalid><![CDATA[88]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="191" name="Экспортирование таблицы БД на диск">
+	<node_order><![CDATA[1009]]></node_order>
+	<externalid><![CDATA[89]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="193" name="Импорт файла в БД">
+	<node_order><![CDATA[1010]]></node_order>
+	<externalid><![CDATA[90]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="284" name="Проверка сортировки столбцов в таблицах БД">
+	<node_order><![CDATA[1011]]></node_order>
+	<externalid><![CDATA[91]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+</testsuite><testsuite id="8" name="Тестирование локализации" >
+<node_order><![CDATA[9]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="160" name="Проверка языка оформления прототипа">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[74]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Проверка языка оформления прототипа</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Язык элементов в рабочем окне прототипа: Eng</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть прототип</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Прототип открыт</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Визуально просмотреть что все элемены прототипа написаны на английском языке</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Все элементы прототипа написаны на английском языке</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="162" name="Проверка языка в столбцах таблиц прототипа">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[75]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="169" name="Проверка языка предупреждающих сообщений в полях ввода">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[78]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Проверка языка предупреждающих сообщений в полях ввода</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Язык предупреждающих сообщений: Eng</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть прототип</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Прототип открыт</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Оставить значение в поле &quot;кол-во пациентов&quot; пустым</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Пустое поле выделяется красной рамкой с предупреждением на английском языке</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="171" name="Проверка языка в поле ответа">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[79]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Проверка языка в поле ответа</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Язык получения ответов в поле: Eng</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Открыть прототип</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Прототип открыт</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Указать кол-во рабочих списков -&gt; левой кнопкой мыши кликнуть [add worklist]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Список добавился в таблицу рабочего списка</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Получить ответ&nbsp;сообщения в поле ответов</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Ответ в поле получен с сообщением на английском языке</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+</testsuite><testsuite id="164" name="Интернационализация" >
+<node_order><![CDATA[10]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="165" name="Проверка форматов дат в БД и прототипа">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[76]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="167" name="Проверка часового формата в БД и в прототипе">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[77]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+</testsuite></testsuite>
